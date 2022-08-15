@@ -1,0 +1,11 @@
+.app__filters {
+    display: flex;
+    justify-content: space-between;
+}
+
+.app__chart {
+    width: 700px;
+    height: 400px;
+
+    margin-top: 20px;
+}

@@ -1,0 +1,78 @@
+.chart {
+    position: relative;
+
+    width: 100%;
+    height: 100%;
+
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.chart__wrapper {
+    width: 100%;
+    height: 100%;
+}
+
+.chart__loader {
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.chart__loader_visible {
+    display: flex;
+}
+
+.chart__fade {
+    position: absolute;
+
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    background-color: #fff;
+    opacity: .8;
+}
+
+.chart__spinner,
+.chart__spinner:after {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+.chart__spinner {
+    border-top: 4px solid rgba(0, 0, 0, 0.1);
+    border-right: 4px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 4px solid rgba(0, 0, 0, 0.1);
+    border-left: 4px solid #999;
+
+    animation: spinner 1.1s infinite linear;
+    will-change: transform;
+}
+
+@-webkit-keyframes spinner {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes spinner {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}

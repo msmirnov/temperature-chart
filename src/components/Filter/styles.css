@@ -1,0 +1,31 @@
+.filter__form {
+    display: flex;
+}
+
+.filter__label {
+    display: block;
+}
+
+.filter__label + .filter__label {
+    margin-left: 10px;
+}
+
+.filter__select {
+    width: 100px;
+    height: 42px;
+
+    padding: 0 10px;
+
+    border: 1px solid #ccc;
+    border-radius: 4px;
+
+    font-size: 18px;
+}
+
+.filter__select:active {
+    outline: none;
+}
+
+.filter__select::part(button) {
+    border-radius: 4px;
+}

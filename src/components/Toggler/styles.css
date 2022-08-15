@@ -1,0 +1,43 @@
+.data-type-toggler {
+    display: flex;
+}
+
+.data-type-toggler__input {
+    display: none;
+}
+
+.data-type-toggler__label {
+    display: block;
+    flex: 0 0 50%;
+    box-sizing: border-box;
+
+    padding: 0 20px;
+
+    text-align: center;
+    line-height: 40px;
+
+    border: 1px solid #ccc;
+
+    transition: background-color .15s;
+    cursor: pointer;
+    user-select: none;
+}
+
+.data-type-toggler__label:first-of-type {
+    border-radius: 4px 0 0 4px;
+}
+
+.data-type-toggler__label:last-of-type {
+    border-radius: 0 4px 4px 0;
+    border-left-color: transparent;
+}
+
+.data-type-toggler__label:hover {
+    background-color: #eee;
+}
+
+.data-type-toggler__input:checked + .data-type-toggler__label {
+    background-color: #ddd;
+
+    cursor: default;
+}

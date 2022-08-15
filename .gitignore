@@ -1,0 +1,6 @@
+.git
+.DS_Store
+dist/*
+!dist/index.html
+!dist/data
+node_modules
